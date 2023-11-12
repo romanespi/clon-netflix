@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #fff;
+  }
+  
+  header {
+    background-color: #000;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    background-color:#000;
+    flex:1;
+    justify-content: space-between;
+  }
+
+  .logo {
+    max-width: 10%;
+    max-height: 40%;
+  }
+  
+  .derecho {
+    list-style:none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  .izquierdo {
+    list-style:none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .contenedor {
+    display: flex;
+    align-items: center;
+  }
+  
+  .perfil {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+  }
+  
+  .perfil img {
+    border-radius: 5px;
+  }
+  
+  .perfil-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    top: 100%; /* Añade esta línea */
+  }
+  
+  .perfil:hover .perfil-content {
+    display: block;
+  }
+  
+  .search-bar {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 0.3rem;
+    color:#fff;
+  }
+  
+  .notification {
+    font-size: 1.6rem;
+  }
