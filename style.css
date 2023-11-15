@@ -1,86 +1,230 @@
 body {
-    font-family: 'Arial';
-    margin: 0;
-    padding: 0;
-    background-color: #141414;
-    color: #fff;
-  }
+  font-family: 'Arial';
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  color: #fff;
   
-  header {
-    background-color: #000;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav {
-    display: flex;
-    background-color:#000;
-    flex:1;
-    justify-content: space-between;
-  }
+}
 
-  .logo {
-    max-width: 10%;
-    max-height: 40%;
-  }
+header {
+  background-image: url('https://i0.wp.com/ningunlugarestalejos.com/wp-content/uploads/2023/10/avatar-netflix-nuevas-imagenes-portada.jpg?fit=2000%2C1125&ssl=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  background-image: linear-gradient(to top,  rgba(0,0,0,0), rgba(0,0,0,1));
+  flex:1;
+  justify-content: space-between;
+  height: 4rem;
+  font-size: 14px;
+  color: rgba(255,255,255,0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.logo {
+  max-width: 13%;
+  max-height: 100%;
+}
+
+.nav-right {
+  list-style:none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.hover-kids {
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+.hover-kids:hover{
+  color: rgba(255,255,255,0.7);
+}
+
+.nav-left {
+  list-style:none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-left li{
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+.nav-left li:hover {
+  color: rgba(255,255,255,0.7);
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+}
+
+.profiles {
+  position: relative;
+  display: flex;
+  align-items: center;  
+  gap: .8rem;
+}
+
+.rotate{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.rotate i{
+  margin-bottom: .2rem;
+}
+
+.rotate > i{
+  transition: 0.3s;
+  transform-origin: 50% 65%;
+}
+
+.profiles:hover .rotate > i{
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.profiles span:hover{
+  text-decoration: underline;
+}
+
+.profiles img {
+  border-radius: 5px;
+}
+
+.profiles-content {
+  display: none;
+  position: absolute;
+  background-color: #141414;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  top: 100%;
+  right: 0;
   
-  .derecho {
-    list-style:none;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-right: 1rem;
-    cursor: pointer;
-  }
-  
-  .izquierdo {
-    list-style:none;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .contenedor {
-    display: flex;
-    align-items: center;
-  }
-  
-  .perfil {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: .3rem;
-  }
-  
-  .perfil img {
-    border-radius: 5px;
-  }
-  
-  .perfil-content {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    top: 100%; /* Añade esta línea */
-  }
-  
-  .perfil:hover .perfil-content {
-    display: block;
-  }
-  
-  .search-bar {
-    background-color: rgba(0,0,0,0.3);
-    border-radius: 5px;
-    padding: 0.3rem;
-    color:#fff;
-  }
-  
-  .notification {
-    font-size: 1.6rem;
-  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+.profiles:hover .profiles-content {
+  display: block;
+}
+
+.options-profile{
+  list-style: none;
+  border-bottom: 1px solid rgba(255,255,255,0.5);
+  padding-bottom: 1rem;
+}
+
+.options-profile li{
+  margin: 1rem 0 0 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.options-profile li i{
+  color: #fff;
+}
+
+.logout{
+  margin-top: 1rem;
+}
+
+.search-bar {
+  font-size: 1.6rem;
+  color:#fff;
+}
+
+.notification {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.container-synopsis{
+  margin: 400px 60% 0 50px;
+}
+
+.synopsis {
+  font-size: 18px;
+}
+
+.container-btns button{
+  padding: .6rem 1.4rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: .5rem;
+
+}
+
+.container-btns i{
+  font-size: 20px;
+  margin-right: .3rem;
+}
+
+.btn-information {
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+.btn-information:hover {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.btn-play:hover {
+  background-color: rgba(255,255,255,0.8);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.slider{
+  display: flex;
+  gap: .4rem;
+  margin-left: 50px;
+  margin-top: 2px;
+  margin-bottom: 40px;
+}
+
+.slide img{
+  border-radius: 3px;
+  transition: 3s;
+}
+
+.slide:hover{
+  transform: scale(1.5);
+}
+
+h3 {
+  margin-left: 50px;
+}

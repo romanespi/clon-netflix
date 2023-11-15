@@ -5,40 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Replica</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
       <nav>
         <div class="contenedor">
           <img class="logo" src="https://farm6.staticflickr.com/5821/20639706793_8c038faa4a_o.png" alt="logo">
-          <ul class="izquierdo">
-            <li>Navegar🔽</li>
-            <li>Kids</li>
+          <ul class="nav-left">
+            <li>Inicio</li>
+            <li>Series</li>
+            <li>Películas</li>
+            <li>Novedades populares</li>
+            <li>Mi lista</li>
+            <li>Explora por idiomas</li>
           </ul>
         </div>
-        <ul class="derecho">
-          <li><input class="search-bar" type="text" placeholder="BUSCAR"></li>
-          <li class="notification">🔔</li>
-          <li class="perfil">
-            <img src="https://picsum.photos/30/30?random" alt="Profile Picture">
-            <span>Román Espino</span>
-            <div class="perfil-content">
-    <div class="profile">
-      <img src="https://picsum.photos/50/50?random" alt="Profile 1">
-      <span>Juan</span>
-    </div>
-    <div class="profile">
-                <img src="https://picsum.photos/50/50?random" alt="Profile 2">
-                <span>Pera</span>
-              </div>
+        <ul class="nav-right">
+          <li class="search-bar"><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li class="hover-kids">Niños</li>
+          <li class="notification"><i class="fa-regular fa-bell"></i></li>
+          <li class="profiles">
+            <div class="rotate">
+              <img src="https://picsum.photos/30/30?random" alt="Profile Picture">
+              <i class="fa-solid fa-sort-down rotate"></i>
+            </div>
+            <div class="profiles-content">
               <div class="profile">
-                <img src="https://picsum.photos/50/50?random" alt="Profile 3">
-                <span>Mengano</span>
+                <img src="https://picsum.photos/30/30?random" alt="Profile 1">
+                <span>Matias</span>
+              </div>
+              <ul class="options-profile">
+                <li><i class="fa-solid fa-pencil"></i><span>Administrar perfiles</span></li>
+                <li><i class="fa-regular fa-address-card"></i><span>Transferir perfil</span></li>
+                <li><i class="fa-regular fa-user"></i><span>Cuenta</span></li>
+                <li><i class="fa-regular fa-circle-question"></i><span>Centro de ayuda</span></li>
+              </ul>
+              <div class="logout">
+                <span>Cerrar sesión en Netflix</span>
               </div>
             </div>
           </li>
         </ul>
       </nav>
+      <div class="container-synopsis">
+        <p class="synopsis">
+          Es una película que sigue las aventuras de Aang
+          un joven sucesor a una larga línea de Avatares, quien debe dominar los cuatro elementos y detener
+          a la Nación del Fuego de esclavizar a las Tribus del Agua y el Reino de Tierra1.
+        </p>
+        <div class="container-btns">
+          <button class="btn-play">
+            <i class="fa-solid fa-play"></i> Reproducir
+          </button>
+          <button class="btn-information">
+            <i class="fa-solid fa-circle-info"></i> Más Información
+          </button>
+        </div>
+      </div>
     </header>
+    <main>
+      <section class="slider-container">
+        <h3>Continuar viendo contenido de Matias</h3>
+        <div class="slider">
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=1" alt="Slide 1">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=2" alt="Slide 2">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=3" alt="Slide 3">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=4" alt="Slide 4">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=5" alt="Slide 5">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=6" alt="Slide 5">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=7" alt="Slide 5">
+          </div>
+        </div>
+      </section>
+      <section class="slider-container">
+        <h3>Series sobre juegos mortales</h3>
+        <div class="slider">
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=8" alt="Slide 1">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=9" alt="Slide 2">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=10" alt="Slide 3">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=11" alt="Slide 4">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=12" alt="Slide 5">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=13" alt="Slide 5">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=14" alt="Slide 5">
+          </div>
+        </div>
+      </section><section class="slider-container">
+        <h3>Telenovelas en español</h3>
+        <div class="slider">
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=15" alt="Slide 1">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=16" alt="Slide 2">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=17" alt="Slide 3">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=18" alt="Slide 4">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=19" alt="Slide 5">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=20" alt="Slide 5">
+          </div>
+          <div class="slide">
+            <img src="https://picsum.photos/220/130?random=21" alt="Slide 5">
+          </div>
+        </div>
+      </section>
+      
+    </main>
   </body>
 </html>
